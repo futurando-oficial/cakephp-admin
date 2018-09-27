@@ -3,7 +3,7 @@ A custom theme using Twitter Bootstrap to bake admin templates in [CakePHP 3](ht
 using the [CakePHP Bake](https://github.com/cakephp/bake) plugin.
 
 ## Requirements
-* CakePHP 3
+* CakePHP 3.6
 * PHP 5.6+
 
 ## What is it?
@@ -19,11 +19,11 @@ You should install this plugin into your CakePHP application using [composer](ht
 The recommended way to install composer packages is using, 
 
 ```bash
-composer require davidyell/nice-admin-bake-scripts
+composer require futurando-oficial/cakephp-admin
 ```
 
 ## Setup
-In your `config/bootstrap.php` you'll need to load the plugin with `Plugin::load('NiceAdminBakeTheme');`
+In your `config/bootstrap.php` you'll need to load the plugin with `Plugin::load('CakePagesTemplate');`
 
 In your admin layout, you'll need to include the theme and javascript if you're using [Twitter Bootstrap](http://getbootstrap.com/). This snippet also includes [jQuery](http://jquery.com/), so if you've already loaded that, please remove that line.
 
@@ -51,7 +51,7 @@ an entire basic admin in around 5 minutes!
 A basic stylesheet is included to fix some minor things. You can symlink the stylesheet into your own `webroot/css` and include it from there, using
 
 ```bash
-$ bin/cake plugin assets symlink NiceAdminBakeTheme
+$ bin/cake plugin assets symlink CakePagesTemplate
 ```
 
 Of if you want to create the link manually `cd webroot/css && ln -s ../../vendor/davidyell/nice-admin-bake-scripts/webroot/css/nice-admin.css`.
@@ -62,17 +62,17 @@ checking the available themes listed in the `--theme` option help. If you don't 
 
 ### Controllers
 ```bash
-bin/cake bake controller --theme=NiceAdminBakeTheme Examples
+bin/cake bake controller --theme=CakePagesTemplate Examples
 ```
 
 ### Templates
 ```bash
-bin/cake bake template --theme=NiceAdminBakeTheme Examples
+bin/cake bake template --theme=CakePagesTemplate Examples
 ```
 
 ### Prefixed templates
 ```bash
-bin/cake bake template --theme=NiceAdminBakeTheme --prefix=Admin Examples
+bin/cake bake template --theme=CakePagesTemplate --prefix=Admin Examples
 ```
 
 ## Example layout, elements and dashboard
@@ -83,7 +83,7 @@ If you want to link to the styles. `echo $this->Html->css(['nice-admin']);`
 
 However it's preferable to use a symlink.
 ```bash
-$ bin/cake plugin assets symlink NiceAdminBakeTheme
+$ bin/cake plugin assets symlink CakePagesTemplate
 ```
 
 :warning: These elements are optional, and do not provide a completed admin. You will need to customise 
