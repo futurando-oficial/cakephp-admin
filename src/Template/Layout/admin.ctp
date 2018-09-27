@@ -17,12 +17,12 @@
 	?>
 </head>
 <body>
-    <?php echo $this->element('NiceAdminBakeTheme.top-navigation');?>
+    <?php echo $this->element('CakePagesTemplate.top-navigation');?>
 
     <div class="container-fluid admin">
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
-                <?php echo $this->element('NiceAdminBakeTheme.navigation');?>
+                <?php echo $this->element('CakePagesTemplate.navigation');?>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <?php echo $this->Flash->render();?>

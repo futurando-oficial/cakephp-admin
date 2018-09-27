@@ -1,20 +1,12 @@
 {
-    "name": "davidyell/nice-admin-bake-scripts",
-    "description": "NiceAdminBakeTheme plugin for CakePHP",
+    "name": "futurando-oficial/cakephp-admin",
+    "description": "CakePagesTemplate plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "GPL-3.0",
     "keywords": ["cakephp", "cakephp3", "bake", "theme", "admin", "bootstrap"],
-    "authors": [
-      {
-        "name": "David Yell",
-        "email": "neon1024@gmail.com",
-        "homepage": "http://jedistirfry.co.uk/",
-        "role": "Developer"
-      }
-    ],
     "require": {
         "php": ">=5.6",
-        "cakephp/cakephp": "^3.4",
+        "cakephp/cakephp": "^3.6",
         "friendsofcake/bootstrap-ui": "~1.0"
     },
     "suggest": {
@@ -24,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "NiceAdminBakeTheme\\": "src"
+            "CakePagesTemplate\\": "src"
         }
     }
 }
