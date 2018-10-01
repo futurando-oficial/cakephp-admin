@@ -1,29 +1,42 @@
-<div class="user">
-    <?php
-    $hash = md5(strtolower(trim($this->request->session()->read('Auth.User.email'))));
-    echo "<img class='$class' src='http://www.gravatar.com/avatar/$hash?s=$size&d=mm'>";
-    ?>
-    <p>
-        <?= $this->request->session()->read('Auth.User.first_name') . ' ' . $this->request->session()->read('Auth.User.last_name')?><br>
-        <span class="status online"><i class="glyphicon glyphicon-ok-sign"></i></span> Online
-    </p>
+<!-- START SIDEBAR MENU -->
+<div class="sidebar-menu">
+  <!-- BEGIN SIDEBAR MENU ITEMS-->
+  <ul class="menu-items">
+    <li class="m-t-30">
+      <a href="#" class="detailed">
+        <span class="title">Page 1</span>
+        <span class="details">234 notifications</span>
+      </a>
+      <span class="icon-thumbnail "><i class="pg-mail"></i></span>
+    </li>
+    <li class="">
+      <a href="#">
+        <span class="title">Page 2</span>
+      </a>
+      <span class="icon-thumbnail "><i class="pg-social"></i></span>
+    </li>
+    <li class="">
+      <a href="javascript:;">
+        <span class="title">Page 3</span>
+        <span class=" arrow"></span>
+      </a>
+      <span class="icon-thumbnail"><i class="pg-grid"></i></span>
+      <ul class="sub-menu">
+        <li class="">
+          <a href="#">Sub Page 1</a>
+          <span class="icon-thumbnail">sp</span>
+        </li>
+        <li class="">
+          <a href="#">Sub Page 2</a>
+          <span class="icon-thumbnail">sp</span>
+        </li>
+        <li class="">
+          <a href="#">Sub Page 3</a>
+          <span class="icon-thumbnail">sp</span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
 </div>
-
-<nav id="accordion">
-    <h3><i class="glyphicon glyphicon-flag"></i> First item <i class="glyphicon glyphicon-chevron-left"></i></h3>
-    <div>
-        <ul>
-            <li <?php echo ($this->request->controller == 'Examples')? 'class="active"' : '' ?>><?php echo $this->Html->link('Examples', ['controller' => 'Examples', 'action' => 'index', 'plugin' => false], ['escape' => false]); ?></li>
-            <li <?php echo ($this->request->controller == 'Placeholders')? 'class="active"' : '' ?>><?php echo $this->Html->link('Placeholders', ['controller' => 'Placeholders', 'action' => 'index', 'plugin' => false]); ?></li>
-        </ul>
-    </div>
-
-    <h3><i class="glyphicon glyphicon-list-alt"></i> Second item <i class="glyphicon glyphicon-chevron-left"></i></h3>
-    <div>
-        <ul>
-            <li <?php echo ($this->request->controller == 'Examples')? 'class="active"' : '' ?>><?php echo $this->Html->link('Examples', ['controller' => 'Examples', 'action' => 'index', 'plugin' => false], ['escape' => false]); ?></li>
-            <li <?php echo ($this->request->controller == 'Placeholders')? 'class="active"' : '' ?>><?php echo $this->Html->link('Placeholders', ['controller' => 'Placeholders', 'action' => 'index', 'plugin' => false]); ?></li>
-        </ul>
-    </div>
-
-</nav>
+<!-- END SIDEBAR MENU -->
