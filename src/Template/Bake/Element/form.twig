@@ -13,9 +13,20 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 #}
+<?php 
+$templatesPages = [
+        'formstart' => '<form class="" {{attrs}}  role="form">',
+        'label' => '<label {{attrs}}>{{text}}</label>',
+        'input' => '<input type="{{type}}" class="form-control" name="{{name}}" {{attrs}} />',
+        'select' => '<div class="col-md-10"><select name="{{name}}"{{attrs}}>{{content}}</select>    </div>',
+        'inputContainer' => '<div class="col-md-6"><div class="form-group form-group-default {{required}}" form-type="{{type}}">{{content}}</div></div>',
+        'checkContainer' => '',
+]; 
+?>
+
 {% set fields = Bake.filterFields(fields, schema, modelObject) %}
 <div class="{{ pluralVar }} form large-9 medium-8 columns content">
-    <?= $this->Form->create(${{ singularVar }}) ?>
+    <?= $this->Form->create(${{ singularVar }},['templates' => $templatesPages]) ?>
     <fieldset>
         <legend><?= __('{{ action|humanize }} {{ singularHumanName }}') ?></legend>
         <?php
