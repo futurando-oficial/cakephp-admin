@@ -18,6 +18,7 @@
  * @var \{{ namespace }}\View\AppView $this
  * @var \{{ entityClass }} ${{ singularVar }}
  */
+ $this->layout = "CakePagesTemplate.admin";
 ?>
 {% set associations = {'BelongsTo': [], 'HasOne': [], 'HasMany': [], 'BelongsToMany': []}|merge(associations) %}
 {% set fieldsData = Bake.getViewFieldsData(fields, schema, associations) %}
