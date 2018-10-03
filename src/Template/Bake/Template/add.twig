@@ -18,6 +18,14 @@
  * @var \{{ namespace }}\View\AppView $this
  * @var \{{ entityClass }} ${{ singularVar }}
  */
+$templatesPages = [
+        'formstart' => '<form class="" {{attrs}}  role="form">',
+        'label' => '<label {{attrs}}>{{text}}</label>',
+        'input' => '<input type="{{type}}" class="form-control" name="{{name}}" {{attrs}} />',
+        'select' => '<div class="col-md-10"><select name="{{name}}"{{attrs}}>{{content}}</select>    </div>',
+        'inputContainer' => '<div class="col-md-6"><div class="form-group form-group-default {{required}}" form-type="{{type}}">{{content}}</div></div>',
+        'checkContainer' => '',
+]; 
 ?>
 <div class=" container-fluid   container-fixed-lg">
     <div class="row">
@@ -26,12 +34,12 @@
         <div class="card card-default">
         <div class="card-header ">
             <div class="card-title">
-            Option #one
+            <?= __('{{ singularHumanName }}') ?>
             </div>
         </div>
         <div class="card-block">
             <h5>
-            Pages default style
+            <?= __('{{ action|humanize }}') ?>
             </h5>
             {% element 'form' %}
         </div>
