@@ -104,7 +104,7 @@ echo $this->Html->script([
 'CakePagesTemplate./plugins/imagesloaded/imagesloaded.pkgd.min.js',
 'CakePagesTemplate./plugins/jquery-actual/jquery.actual.min.js',
 'CakePagesTemplate./plugins/jquery-scrollbar/jquery.scrollbar.min.js',
-'CakePagesTemplate.pages.mim.js',
+'CakePagesTemplate.pages.min.js',
 'CakePagesTemplate.scripts.js'
 ]);
 echo $this->fetch('script');
