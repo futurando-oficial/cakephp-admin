@@ -48,7 +48,7 @@ echo $this->fetch('css');
         </div>
       </div>
       <!-- END SIDEBAR MENU HEADER-->
-      <?php echo $this->element('navigation'); ?>
+      <?php echo $this->element('CakePagesTemplate.navigation'); ?>
     </nav>
     <!-- END SIDEBAR -->
     <!-- END SIDEBAR -->
@@ -61,7 +61,7 @@ echo $this->fetch('css');
         <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar">
         </a>
         <!-- END MOBILE SIDEBAR TOGGLE -->
-        <?php echo $this->element('usermenu');?>
+        <?php echo $this->element('CakePagesTemplate.usermenu');?>
       </div>
       <!-- END HEADER -->
       <!-- END PAGE HEADER WRAPPER -->
@@ -71,7 +71,7 @@ echo $this->fetch('css');
         <div class="content">
           <!-- START JUMBOTRON -->
           <div class="jumbotron" data-pages="parallax">
-            <?php echo $this->element('breadcrumb');?>
+            <?php echo $this->element('CakePagesTemplate.breadcrumb');?>
           </div>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
@@ -83,7 +83,7 @@ echo $this->fetch('css');
         </div>
         <!-- END PAGE CONTENT -->
         <!-- START FOOTER -->
-        <?php echo $this->element('footer');?>
+        <?php echo $this->element('CakePagesTemplate.footer');?>
           <!-- END FOOTER -->
       </div>
       <!-- END PAGE CONTENT WRAPPER -->
