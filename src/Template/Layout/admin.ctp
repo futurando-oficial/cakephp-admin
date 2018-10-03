@@ -14,14 +14,14 @@ echo $this->Html->meta('icon');
 echo $this->fetch('meta');
 
 echo $this->Html->css([
-'/plugins/pace/pace-theme-flash.css',
-'/plugins/bootstrap/css/bootstrap.min.css',
-'/plugins/font-awesome/css/font-awesome.css',
-'/plugins/jquery-scrollbar/jquery.scrollbar.css',
-'/plugins/select2/css/select2.min.css',
-'/plugins/switchery/css/switchery.min.css',
-'pages-icons.css',
-'pages.min.css'
+'CakePagesTemplate./plugins/pace/pace-theme-flash.css',
+'CakePagesTemplate./plugins/bootstrap/css/bootstrap.min.css',
+'CakePagesTemplate./plugins/font-awesome/css/font-awesome.css',
+'CakePagesTemplate./plugins/jquery-scrollbar/jquery.scrollbar.css',
+'CakePagesTemplate./plugins/select2/css/select2.min.css',
+'CakePagesTemplate./plugins/switchery/css/switchery.min.css',
+'CakePagesTemplate.pages-icons.css',
+'CakePagesTemplate.pages.min.css'
 ]);
 
 echo $this->fetch('css');
@@ -39,7 +39,7 @@ echo $this->fetch('css');
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header">
-        <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
+        <img src="/assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
         <div class="sidebar-header-controls">
           <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
           </button>
@@ -91,21 +91,21 @@ echo $this->fetch('css');
     <!-- END PAGE CONTAINER -->
     <?php
 echo $this->Html->script([
-'/plugins/pace/pace.min.js',
-'/plugins/jquery/jquery-1.11.1.min.js',
-'/plugins/modernizr.custom.js',
-'/plugins/jquery-ui/jquery-ui.min.js',
-'/plugins/tether/js/tether.min.js',
-'/plugins/bootstrap/js/bootstrap.min.js',
-'/plugins/jquery/jquery-easy.js',
-'/plugins/jquery-unveil/jquery.unveil.min.js',
-'/plugins/jquery-bez/jquery.bez.min.js',
-'/plugins/jquery-ios-list/jquery.ioslist.min.js',
-'/plugins/imagesloaded/imagesloaded.pkgd.min.js',
-'/plugins/jquery-actual/jquery.actual.min.js',
-'/plugins/jquery-scrollbar/jquery.scrollbar.min.js',
-'pages.mim.js',
-'scripts.js'
+'CakePagesTemplate./plugins/pace/pace.min.js',
+'CakePagesTemplate./plugins/jquery/jquery-1.11.1.min.js',
+'CakePagesTemplate./plugins/modernizr.custom.js',
+'CakePagesTemplate./plugins/jquery-ui/jquery-ui.min.js',
+'CakePagesTemplate./plugins/tether/js/tether.min.js',
+'CakePagesTemplate./plugins/bootstrap/js/bootstrap.min.js',
+'CakePagesTemplate./plugins/jquery/jquery-easy.js',
+'CakePagesTemplate./plugins/jquery-unveil/jquery.unveil.min.js',
+'CakePagesTemplate./plugins/jquery-bez/jquery.bez.min.js',
+'CakePagesTemplate./plugins/jquery-ios-list/jquery.ioslist.min.js',
+'CakePagesTemplate./plugins/imagesloaded/imagesloaded.pkgd.min.js',
+'CakePagesTemplate./plugins/jquery-actual/jquery.actual.min.js',
+'CakePagesTemplate./plugins/jquery-scrollbar/jquery.scrollbar.min.js',
+'CakePagesTemplate.pages.mim.js',
+'CakePagesTemplate.scripts.js'
 ]);
 echo $this->fetch('script');
 ?>

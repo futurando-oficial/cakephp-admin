@@ -14,9 +14,7 @@
  */
 #}
             {% set fields = Bake.filterFields(fields, schema, modelObject) %}
-            <div class="{{ pluralVar }} form large-9 medium-8 columns content">
                 <?= $this->Form->create(${{ singularVar }},['templates' => $templatesPages]) ?>
-                <fieldset>
                     <?php
             {% for field in fields if field not in primaryKey %}
                 {%- if keyFields[field] %}
@@ -47,7 +45,7 @@
                 {%- endfor %}
             {% endif %}
                     ?>
-                </fieldset>
-                <?= $this->Form->button(__('Submit')) ?>
+                <div class="col-md-12">    
+                    <?= $this->Form->button(__('Submit'),['class'=>'btn btn-complete btn-cons']) ?>
+                </div>
                 <?= $this->Form->end() ?>
-            </div>
