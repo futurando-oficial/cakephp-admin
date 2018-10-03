@@ -68,9 +68,6 @@
     </div>
 </div>
 
-
-
-
 <?php $this->append('script');?>
 <script type="text/javascript">
     // Add your graph javascript
