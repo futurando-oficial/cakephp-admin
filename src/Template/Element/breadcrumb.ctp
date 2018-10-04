@@ -2,8 +2,8 @@
   <div class="inner">
     <!-- START BREADCRUMB -->
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#"><?= $this->request->params['controller'] ?></a></li>
-      <li class="breadcrumb-item active"><?= $this->request->params['action'] ?></li>
+      <li class="breadcrumb-item"><a href="#"><?= $this->request->getParam('controller') ?></a></li>
+      <li class="breadcrumb-item active"><?= $this->request->getParam('action') ?></li>
     </ol>
     <!-- END BREADCRUMB -->
   </div>
