@@ -26,6 +26,17 @@
         echo $this->fetch('css');
         ?>
     </head>
+    <style>
+        .icon-thumbnail {
+            display: table;
+        }
+        .icon-thumbnail > i {
+            font-size: 14px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    </style>
+
 
     <body class="fixed-header menu-pin">
         <!-- BEGIN SIDEBAR -->
