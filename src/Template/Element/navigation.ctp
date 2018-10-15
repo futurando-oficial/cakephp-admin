@@ -6,7 +6,7 @@
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header">
-        <img src="<?= $this->Url->build('/cake_pages_template/img/logo_white.png') ?>" alt="logo" class="brand" data-src="<?= $this->Url->build('/cake_pages_template/img/logo_white.png') ?>" data-src-retina="<?= $this->Url->build('/cake_pages_template/img/logo_white_2x.png') ?>" width="78" height="22">
+        <img src="<?= $this->Url->build('/img/logo.png') ?>" alt="logo" class="brand" data-src="<?= $this->Url->build('/img/logo.png') ?>" data-src-retina="<?= $this->Url->build('/img/logo_2x.png') ?>" width="78" height="22">
         <div class="sidebar-header-controls">
           <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
           </button>
