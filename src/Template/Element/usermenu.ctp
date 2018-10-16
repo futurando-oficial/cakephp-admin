@@ -2,7 +2,7 @@
 <div class="d-flex align-items-center">
     <!-- START User Info-->
     <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
-        <span class="semi-bold"><?= $this->Session->read('Auth.User.name') ?></span>
+        <span class="semi-bold"><?= $this->request->getSession()->read('Auth.User.name') ?></span>
     </div>
     <div class="dropdown pull-right hidden-md-down">
         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
