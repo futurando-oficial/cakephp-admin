@@ -42,7 +42,7 @@
         <!-- BEGIN SIDEBAR -->
         <!-- BEGIN SIDEBPANEL-->
 
-        <?php echo $this->element('CakePagesTemplate.navigation'); ?>
+        <?php echo $this->element('navigation'); ?>
 
         <!-- END SIDEBAR -->
         <!-- END SIDEBAR -->

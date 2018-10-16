@@ -41,13 +41,7 @@
                 <img src="<?= $this->Url->build('/img/background.jpg') ?>" data-src="<?= $this->Url->build('/img/background.jpg') ?>" data-src-retina="<?= $this->Url->build('/img/background.jpg') ?>" alt="" class="lazy">
                 <!-- END Background Pic-->
                 <!-- START Background Caption-->
-                <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
-                    <h2 class="semi-bold text-white">
-                        Pages make it easy to enjoy what matters the most in the life</h2>
-                    <p class="small">
-                        images Displayed are solely for representation purposes only, All work copyright of respective owner, otherwise © 2013-2014 REVOX.
-                    </p>
-                </div>
+
                 <!-- END Background Caption-->
             </div>
             <!-- END Login Background Pic Wrapper-->
